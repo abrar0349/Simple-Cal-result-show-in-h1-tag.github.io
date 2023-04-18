@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+div.form{
+    border: 2px solid black;
+    display: inline-block;
+    padding: 200px;
+    margin-top: 50px;
+    background-color: aqua;
+    color: blue;
+}
+    </style>
+</head>
+<body>
+    <center>
+        <div class = "form">
+    <input type="text" name="" id="user1"><br><br>
+    <input type="text" name="" id="user2">
+    <h1 id = "Heading">  Result </h1>
+    <button onclick = "add()">Add</button>
+    <button onclick = "sub()">Sub</button>
+    <button onclick = "mult()">Mult</button>
+    <button onclick = "divide()">Divide</button>
+</div>
+  </center>
+    
+    <script>
+function add(){
+    let one = document.getElementById('user1').value;
+    let two =  document.getElementById('user2').value;
+    let rest1 = parseInt(one) + parseInt (two);
+    document.getElementById('Heading').innerText = rest1;
+}
+
+function sub(){
+    let one = document.getElementById('user1').value;
+    let two =  document.getElementById('user2').value;
+    let rest1 = parseInt(one - two);
+    document.getElementById('Heading').innerText = rest1;
+}
+
+function mult(){
+    let one = document.getElementById('user1').value;
+    let two =  document.getElementById('user2').value;
+    let rest1 = parseInt(one * two);
+    document.getElementById('Heading').innerText = rest1;
+}
+
+function divide(){
+    let one = document.getElementById('user1').value;
+    let two =  document.getElementById('user2').value;
+    let rest1 = parseInt (one / two);
+    document.getElementById('Heading').innerText = rest1;
+}
+    </script>
+</body>
+</html>
